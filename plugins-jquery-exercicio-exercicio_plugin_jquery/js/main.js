@@ -39,7 +39,8 @@ $('form').validate({
         },
     },
     submitHandler: function (form) {
-        alert("Sua requisição foi enviada para análise, parabéns pela aquisição!");(form);
+        alert("Sua requisição foi enviada para análise, parabéns pela aquisição!");
+        form.reset();
     },
     invalidHandler: function (evento, validador) {
         let camposIncorretos = validador.numberOfInvalids();
